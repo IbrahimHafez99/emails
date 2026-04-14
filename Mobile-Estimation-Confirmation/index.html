@@ -1,142 +1,122 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-  <!--[if mso]>
-  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
-  <![endif]-->
   <title>Your Kitchen WrapCo Estimate</title>
   <style>
-    /* ===== RESET ===== */
     * { box-sizing: border-box; }
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
     body { margin: 0; padding: 0; width: 100% !important; min-width: 100%; background-color: #ffffff; }
+    body, td, p, a, li { font-family: Helvetica, Arial, Verdana, sans-serif; }
+    a { color: #898989; }
 
-    /* ===== TYPOGRAPHY ===== */
-    body, td, p, a, li { font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; }
+    .email-container { width: 100%; max-width: 393px; }
+    .summary-col { width: 33.33%; vertical-align: bottom; }
+    .detail-col { width: 50%; vertical-align: top; }
+    .option-image-col { width: 44%; vertical-align: top; }
+    .option-copy-col { width: 56%; vertical-align: top; }
 
-    /* ===== LINKS ===== */
-    a { color: #8b8989; }
-    a:hover { text-decoration: underline; }
-
-    /* ===== RESPONSIVE ===== */
-    @media only screen and (max-width: 660px) {
-      .email-wrapper  { width: 100% !important; }
-      .email-container { width: 100% !important; max-width: 100% !important; }
-      .col-half { width: 100% !important; display: block !important; }
-      .hide-mobile { display: none !important; }
-      .stack-mobile { display: block !important; width: 100% !important; }
+    @media only screen and (max-width: 393px) {
+      .page-pad { padding-left: 12px !important; padding-right: 12px !important; }
+      .summary-card-pad { padding: 8px 6px !important; }
+      .summary-brand { font-size: 17px !important; }
+      .summary-divider { font-size: 17px !important; padding: 0 2px !important; }
+      .summary-range { font-size: 15px !important; }
+      .summary-popular { font-size: 10px !important; }
+      .summary-offer-head { font-size: 12px !important; line-height: 16px !important; }
+      .summary-from { font-size: 10px !important; }
+      .summary-old { font-size: 15px !important; line-height: 16px !important; }
+      .summary-price { font-size: 24px !important; line-height: 32px !important; }
+      .summary-vat { font-size: 10px !important; line-height: 14px !important; }
+      .detail-title { font-size: 16px !important; line-height: 24px !important; }
+      .detail-copy { font-size: 12px !important; line-height: 18px !important; }
+      .detail-list { font-size: 12px !important; line-height: 18px !important; }
+      .addons-title { font-size: 18px !important; line-height: 24px !important; }
+      .addon-name { font-size: 12px !important; line-height: 18px !important; }
+      .addon-old { font-size: 14px !important; line-height: 16px !important; }
+      .addon-discount { font-size: 10px !important; line-height: 12px !important; }
+      .addon-price { font-size: 24px !important; line-height: 28px !important; }
     }
-
-    /* ===== PLAN CARDS ===== */
-
-    /* Pricing overview: 3 columns, stay side by side even on mobile */
-    .pricing-cell { width: 33.33%; vertical-align: top; padding: 0 4px; }
-
-    /* Plan detail card: 2 columns — stack on small screens */
-    .plan-col { width: 50%; vertical-align: top; }
-    @media only screen and (max-width: 480px) {
-      .plan-col { display: block !important; width: 100% !important; }
-    }
-
-    /* Addon cards: 2 columns, always side by side (matches mobile design) */
-    .addon-col { width: 50%; vertical-align: top; padding: 4px; }
   </style>
 </head>
 <body style="margin:0; padding:0; background-color:#ffffff;">
 
-  <!-- Preview text (hidden) -->
   <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
-    Here's the breakdown of your Kitchen WrapCo estimate &#8203;&#65279;&#847;&#8203;&#65279;&#847;
+    Here's the breakdown of your Kitchen WrapCo estimate
   </div>
 
-  <!-- Outer wrapper -->
   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ffffff;">
     <tr>
       <td align="center" valign="top" style="padding:0;">
 
-        <!-- ==================== CONTAINER ==================== -->
-        <table class="email-container" role="presentation" border="0" cellpadding="0" cellspacing="0" width="660" style="max-width:660px; width:100%;">
+        <table class="email-container" role="presentation" border="0" cellpadding="0" cellspacing="0" width="393" style="width:100%; max-width:393px;">
 
-
-          <!-- ==================== SECTION 1: LOGO ==================== -->
           <tr>
-            <td style="background-color:#ffffff; padding:24px;">
+            <td class="page-pad" style="background-color:#ffffff; padding:24px 12px 16px;">
               <a href="https://kitchenwrapco.com" target="_blank" style="display:inline-block;">
                 <img
                   src="https://mcusercontent.com/de6df24b8217ef458fa7a1065/images/3acf8367-f642-0bf9-5ee9-c7e9cc9d0d07.png"
                   alt="Kitchen WrapCo"
-                  width="135"
-                  style="display:block; height:auto; max-width:135px;"
+                  width="171"
+                  style="display:block; width:171px; max-width:100%; height:auto;"
                 >
               </a>
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 2: HERO GIF ==================== -->
           <tr>
-            <td style="background-color:#ffffff; padding:0;">
-              <a href="https://kitchenwrapco.com" target="_blank" style="display:block;">
-                <img
-                  src="https://mcusercontent.com/de6df24b8217ef458fa7a1065/images/d72af94e-75a1-e477-f6f8-2e7bddf7d325.gif"
-                  alt="Kitchen WrapCo"
-                  width="660"
-                  style="display:block; width:100%; height:auto; max-width:660px;"
-                >
-              </a>
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 16px;">
+              <img
+                src="https://mcusercontent.com/de6df24b8217ef458fa7a1065/images/d72af94e-75a1-e477-f6f8-2e7bddf7d325.gif"
+                alt="Kitchen WrapCo"
+                width="369"
+                style="display:block; width:100%; height:auto; max-width:369px;"
+              >
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 3: INTRO TEXT ==================== -->
           <tr>
-            <td style="background-color:#ffffff; padding:22px 24px 20px;">
-              <p style="margin:0; font-size:16px; line-height:1.5; color:#231e15; font-weight:normal;">
-                Thanks for taking the time to generate your estimate — here's a breakdown based on the details you provided.
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 24px;">
+              <p style="margin:0; font-size:16px; line-height:26px; color:#000000;">
+                Thanks for taking the time to generate your estimate - here's a breakdown based on the details you provided.
               </p>
             </td>
           </tr>
-          <!-- ==================== SECTION 4: PLAN OVERVIEW BOXES ==================== -->
+
           <tr>
-            <td style="background-color:#ffffff; padding:0 0 8px;">
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 32px;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td class="pricing-cell" width="33.33%" valign="bottom" style="width:33.33%; padding:0 5px 0 0; vertical-align:bottom;">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #9d9a96; border-radius:26px;">
+                  <td class="summary-col" style="padding-right:8px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid rgba(0,0,0,0.2); border-radius:16px 16px 0 0;">
                       <tr>
-                        <td style="padding:24px 18px 26px;">
-                          <p style="margin:0 0 22px; font-size:0; line-height:1; text-align:center;">
-                            <span style="font-size:30px; font-weight:800; color:#ffca0d; letter-spacing:-1px;">ECO</span>
-                            <span style="font-size:30px; color:#4d4844; padding:0 6px;">|</span>
-                            <span style="font-size:25px; font-weight:500; color:#4d4844;">Range.</span>
+                        <td class="summary-card-pad" style="padding:8px;">
+                          <p style="margin:0 0 8px; text-align:center; font-size:0; line-height:1;">
+                            <span class="summary-brand" style="font-size:18px; font-weight:700; color:#ffcc03;">ECO</span>
+                            <span class="summary-divider" style="font-size:18px; color:#4d4744; padding:0 2px;">|</span>
+                            <span class="summary-range" style="font-size:16px; color:#4d4744;">Range.</span>
                           </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#9d9a96; border-radius:20px 20px 0 0;">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #898989; border-radius:10px 10px 0 0; overflow:hidden;">
                             <tr>
-                              <td style="padding:10px 12px 8px;">
-                                <p style="margin:0; font-size:26px; line-height:1; color:#ffffff; font-weight:800; text-align:center;">Monthly Offer</p>
+                              <td style="background-color:#a7a29d; padding:8px 10px;">
+                                <p class="summary-offer-head" style="margin:0; text-align:center; font-size:12px; line-height:16px; font-weight:700; color:#ffffff;">Monthly Offer</p>
                               </td>
                             </tr>
                             <tr>
-                              <td style="padding:0 2px 2px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ffffff;">
-                                  <tr>
-                                    <td style="padding:18px 12px 12px; border-left:2px solid #9d9a96; border-right:2px solid #9d9a96; border-bottom:2px solid #9d9a96;">
-                                      <p style="margin:0 0 8px; font-size:0; line-height:1;">
-                                        <span style="font-size:12px; color:#8b8989; vertical-align:middle;">From </span>
-                                        <span style="display:inline-block; position:relative; font-size:32px; font-weight:800; color:#8b8989; vertical-align:middle;">£750<span style="position:absolute; left:-3px; right:-3px; top:15px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                      </p>
-                                      <p style="margin:0 0 8px; font-size:70px; line-height:0.92; color:#ffbf00; font-weight:900; text-align:center; letter-spacing:-2px;">£701</p>
-                                      <p style="margin:0; font-size:12px; line-height:1; color:#8b8989; font-weight:700; text-align:right;">Exc. VAT</p>
-                                    </td>
-                                  </tr>
-                                </table>
+                              <td style="padding:4px 8px; background-color:#ffffff;">
+                                <p style="margin:0 0 2px; font-size:0; line-height:1; color:#898989;">
+                                  <span class="summary-from" style="font-size:12px; vertical-align:bottom;">from</span>
+                                  <span style="display:inline-block; width:4px;"></span>
+                                  <span class="summary-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£750</span>
+                                </p>
+                                <p class="summary-price" style="margin:0; font-size:24px; line-height:32px; font-weight:700; color:#ffcc03;">£701</p>
+                                <p class="summary-vat" style="margin:0; font-size:10px; line-height:14px; color:#898989;">Exc. VAT</p>
                               </td>
                             </tr>
                           </table>
@@ -144,188 +124,66 @@
                       </tr>
                     </table>
                   </td>
-                  <td class="pricing-cell" width="33.33%" valign="bottom" style="width:33.33%; padding:0 2px; vertical-align:bottom;">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #ffca0d; border-radius:26px;">
-                      <tr>
-                        <td style="background-color:#ffca0d; padding:16px 12px; border-radius:24px 24px 0 0;">
-                          <p style="margin:0; font-size:24px; line-height:1; color:#ffffff; font-weight:800; text-align:center;">Most Popular</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:24px 18px 26px;">
-                          <p style="margin:0 0 22px; font-size:0; line-height:1; text-align:center;">
-                            <span style="font-size:30px; font-weight:800; color:#2d8acb; letter-spacing:-1px;">PREM</span>
-                            <span style="font-size:30px; color:#4d4844; padding:0 6px;">|</span>
-                            <span style="font-size:25px; font-weight:500; color:#4d4844;">Range.</span>
-                          </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#9d9a96; border-radius:20px 20px 0 0;">
-                            <tr>
-                              <td style="padding:10px 12px 8px;">
-                                <p style="margin:0; font-size:26px; line-height:1; color:#ffffff; font-weight:800; text-align:center;">Monthly Offer</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding:0 2px 2px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ffffff;">
-                                  <tr>
-                                    <td style="padding:18px 12px 12px; border-left:2px solid #9d9a96; border-right:2px solid #9d9a96; border-bottom:2px solid #9d9a96;">
-                                      <p style="margin:0 0 8px; font-size:0; line-height:1;">
-                                        <span style="font-size:12px; color:#8b8989; vertical-align:middle;">From </span>
-                                        <span style="display:inline-block; position:relative; font-size:32px; font-weight:800; color:#8b8989; vertical-align:middle;">£1450<span style="position:absolute; left:-3px; right:-3px; top:15px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                      </p>
-                                      <p style="margin:0 0 8px; font-size:70px; line-height:0.92; color:#ffbf00; font-weight:900; text-align:center; letter-spacing:-2px;">£1391</p>
-                                      <p style="margin:0; font-size:12px; line-height:1; color:#8b8989; font-weight:700; text-align:right;">Exc. VAT</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td class="pricing-cell" width="33.33%" valign="bottom" style="width:33.33%; padding:0 0 0 5px; vertical-align:bottom;">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #9d9a96; border-radius:26px;">
-                      <tr>
-                        <td style="padding:24px 18px 26px;">
-                          <p style="margin:0 0 22px; font-size:0; line-height:1; text-align:center;">
-                            <span style="font-size:30px; font-weight:800; color:#8c2f8d; letter-spacing:-1px;">LUX</span>
-                            <span style="font-size:30px; color:#4d4844; padding:0 6px;">|</span>
-                            <span style="font-size:25px; font-weight:500; color:#4d4844;">Range.</span>
-                          </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#9d9a96; border-radius:20px 20px 0 0;">
-                            <tr>
-                              <td style="padding:10px 12px 8px;">
-                                <p style="margin:0; font-size:26px; line-height:1; color:#ffffff; font-weight:800; text-align:center;">Monthly Offer</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding:0 2px 2px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ffffff;">
-                                  <tr>
-                                    <td style="padding:18px 12px 12px; border-left:2px solid #9d9a96; border-right:2px solid #9d9a96; border-bottom:2px solid #9d9a96;">
-                                      <p style="margin:0 0 8px; font-size:0; line-height:1;">
-                                        <span style="font-size:12px; color:#8b8989; vertical-align:middle;">From </span>
-                                        <span style="display:inline-block; position:relative; font-size:32px; font-weight:800; color:#8b8989; vertical-align:middle;">£2450<span style="position:absolute; left:-3px; right:-3px; top:15px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                      </p>
-                                      <p style="margin:0 0 8px; font-size:70px; line-height:0.92; color:#ffbf00; font-weight:900; text-align:center; letter-spacing:-2px;">£2350</p>
-                                      <p style="margin:0; font-size:12px; line-height:1; color:#8b8989; font-weight:700; text-align:right;">Exc. VAT</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color:#ffffff; font-size:0; line-height:0; height:12px;">&nbsp;</td>
-          </tr>
-          <!-- ==================== SECTION 4: SELECTED PLAN CARDS ==================== -->
-          <tr>
-            <td style="background-color:#ffffff; padding:0 16px 16px;">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #b8b6b2; border-radius:40px;">
-                <tr>
-                  <td style="padding:0;">
+                  <td class="summary-col">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; border-right:1px solid #b8b6b2; vertical-align:top;">
-                          <p style="margin:0 0 38px; font-size:0; line-height:1;">
-                            <span style="font-size:54px; font-weight:800; color:#8b8989; letter-spacing:-2px;">ECO</span>
-                            <span style="font-size:54px; color:#8b8989; padding:0 12px;">|</span>
-                            <span style="font-size:42px; font-weight:500; color:#4d4844; letter-spacing:-1px;">Range.</span>
-                          </p>
-                          <p style="margin:0 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Options Selected</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;">
-                            Face of Kitchen<br>
-                            Drawers<br>
-                            Doors<br>
-                            Kickplates<br>
-                            Worktops<br>
-                            Splashbacks
-                          </p>
-                        </td>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; vertical-align:top;">
-                          <p style="margin:0 0 22px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Warranty Details</p>
-                          <p style="margin:0 0 22px; font-size:24px; line-height:1.35; color:#171717;">
-                            <strong>Installer Guarantee</strong><br>
-                            1-Year Labor Warranty
-                          </p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;">
-                            <strong>Material Guarantee</strong><br>
-                            5-Year Extended Warranty
-                          </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Range Details</p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;"><strong>55</strong> Modern Styles.</p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Specifications</p>
-                          <p style="margin:0 0 20px; font-size:24px; line-height:1.35; color:#171717;"><strong>Thickness:</strong> 160-180 Micron</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;"><strong>Durability:</strong> High</p>
+                        <td style="background-color:#ffcc03; padding:8px 10px; border-radius:14px 14px 0 0;">
+                          <p class="summary-popular" style="margin:0; text-align:center; font-size:10px; line-height:16px; font-weight:700; color:#ffffff;">Most Popular</p>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2" style="padding:0 24px;">
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" style="padding:28px 24px 30px;">
-                          <p style="margin:0 0 26px; font-size:44px; line-height:1.05; color:#8b8989; font-weight:800; letter-spacing:-1px;">
-                            Additional <span style="color:#ffca0d;">Options.</span>
+                        <td style="border:1px solid #ffcc03; padding:8px;">
+                          <p style="margin:0 0 8px; text-align:center; font-size:0; line-height:1;">
+                            <span class="summary-brand" style="font-size:18px; font-weight:700; color:#2d8acb;">PREM</span>
+                            <span class="summary-divider" style="font-size:18px; color:#4d4744; padding:0 2px;">|</span>
+                            <span class="summary-range" style="font-size:16px; color:#4d4744;">Range.</span>
                           </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #898989; border-radius:10px 10px 0 0; overflow:hidden;">
                             <tr>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="Flat doors and drawers" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">New Flat Doors and Drawers</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£1200<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£1080</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
+                              <td style="background-color:#a7a29d; padding:8px 10px;">
+                                <p class="summary-offer-head" style="margin:0; text-align:center; font-size:12px; line-height:16px; font-weight:700; color:#ffffff;">Monthly Offer</p>
                               </td>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=520&q=80" alt="Worktops and splashbacks" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">Matching Worktops and Splashbacks</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£800<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£720</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
+                            </tr>
+                            <tr>
+                              <td style="padding:4px 8px; background-color:#ffffff;">
+                                <p style="margin:0 0 2px; font-size:0; line-height:1; color:#898989;">
+                                  <span class="summary-from" style="font-size:12px; vertical-align:bottom;">from</span>
+                                  <span style="display:inline-block; width:4px;"></span>
+                                  <span class="summary-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£1450</span>
+                                </p>
+                                <p class="summary-price" style="margin:0; font-size:24px; line-height:32px; font-weight:700; color:#ffcc03;">£1391</p>
+                                <p class="summary-vat" style="margin:0; font-size:10px; line-height:14px; color:#898989;">Exc. VAT</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="summary-col" style="padding-left:8px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid rgba(0,0,0,0.2); border-radius:16px 16px 0 0;">
+                      <tr>
+                        <td class="summary-card-pad" style="padding:8px;">
+                          <p style="margin:0 0 8px; text-align:center; font-size:0; line-height:1;">
+                            <span class="summary-brand" style="font-size:18px; font-weight:700; color:#8c2f8d;">LUX</span>
+                            <span class="summary-divider" style="font-size:18px; color:#4d4744; padding:0 2px;">|</span>
+                            <span class="summary-range" style="font-size:16px; color:#4d4744;">Range.</span>
+                          </p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #898989; border-radius:10px 10px 0 0; overflow:hidden;">
+                            <tr>
+                              <td style="background-color:#a7a29d; padding:8px 10px;">
+                                <p class="summary-offer-head" style="margin:0; text-align:center; font-size:12px; line-height:16px; font-weight:700; color:#ffffff;">Monthly Offer</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:4px 8px; background-color:#ffffff;">
+                                <p style="margin:0 0 2px; font-size:0; line-height:1; color:#898989;">
+                                  <span class="summary-from" style="font-size:12px; vertical-align:bottom;">from</span>
+                                  <span style="display:inline-block; width:4px;"></span>
+                                  <span class="summary-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£2450</span>
+                                </p>
+                                <p class="summary-price" style="margin:0; font-size:24px; line-height:32px; font-weight:700; color:#ffcc03;">£2350</p>
+                                <p class="summary-vat" style="margin:0; font-size:10px; line-height:14px; color:#898989;">Exc. VAT</p>
                               </td>
                             </tr>
                           </table>
@@ -338,228 +196,104 @@
             </td>
           </tr>
 
+          <!-- ECO DETAIL -->
           <tr>
-            <td style="background-color:#ffffff; font-size:0; line-height:0; height:12px;">&nbsp;</td>
-          </tr>
-
-          <tr>
-            <td style="background-color:#ffffff; padding:0 16px 16px;">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #b8b6b2; border-radius:40px;">
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 32px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid rgba(0,0,0,0.2); border-radius:24px 24px 0 0;">
                 <tr>
-                  <td style="padding:0;">
+                  <td style="padding:16px;">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; border-right:1px solid #b8b6b2; vertical-align:top;">
-                          <p style="margin:0 0 38px; font-size:0; line-height:1;">
-                            <span style="font-size:54px; font-weight:800; color:#ffca0d; letter-spacing:-2px;">SIGNATURE</span>
-                            <span style="font-size:54px; color:#8b8989; padding:0 12px;">|</span>
-                            <span style="font-size:42px; font-weight:500; color:#4d4844; letter-spacing:-1px;">Range.</span>
+                        <td class="detail-col" style="padding-right:12px; border-right:1px solid rgba(0,0,0,0.2);">
+                          <p style="margin:0 0 16px; font-size:0; line-height:1;">
+                            <span style="font-size:20px; font-weight:700; color:#ffcc03;">ECO</span>
+                            <span style="font-size:20px; color:#4d4744; padding:0 2px;">|</span>
+                            <span style="font-size:18px; color:#4d4744;">Range.</span>
                           </p>
-                          <p style="margin:0 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Options Selected</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;">
-                            Face of Kitchen<br>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span style="font-size:12px; vertical-align:bottom;">from</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£750</span>
+                          </p>
+                          <p style="margin:0 0 16px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£701 <span style="font-size:10px; line-height:14px; color:#898989; font-weight:400;">Exc. VAT</span></p>
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Options Selected</p>
+                          <p class="detail-list" style="margin:0; font-size:16px; line-height:26px; color:#000000;">
+                            Face of kitchen<br>
                             Drawers<br>
                             Doors<br>
                             Kickplates<br>
                             Worktops<br>
                             Splashbacks<br>
                             Upstands<br>
-                            Endpanels
-                          </p>
-                        </td>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; vertical-align:top;">
-                          <p style="margin:0 0 22px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Warranty Details</p>
-                          <p style="margin:0 0 22px; font-size:24px; line-height:1.35; color:#171717;">
-                            <strong>Installer Guarantee</strong><br>
-                            1-Year Labor Warranty
-                          </p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;">
-                            <strong>Material Guarantee</strong><br>
-                            7-Year Extended Warranty
-                          </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Range Details</p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;"><strong>80</strong> Modern Styles.</p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Specifications</p>
-                          <p style="margin:0 0 20px; font-size:24px; line-height:1.35; color:#171717;"><strong>Thickness:</strong> 180-220 Micron</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;"><strong>Durability:</strong> Very High</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" style="padding:0 24px;">
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" style="padding:28px 24px 30px;">
-                          <p style="margin:0 0 26px; font-size:44px; line-height:1.05; color:#8b8989; font-weight:800; letter-spacing:-1px;">
-                            Additional <span style="color:#ffca0d;">Options.</span>
-                          </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="Flat doors and drawers" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">New Flat Doors and Drawers</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£1000<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£900</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=520&q=80" alt="Kickplates and end panels" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">Matching End Panels and Upstands</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£650<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£585</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="background-color:#ffffff; font-size:0; line-height:0; height:12px;">&nbsp;</td>
-          </tr>
-
-          <tr>
-            <td style="background-color:#ffffff; padding:0 16px 16px;">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #b8b6b2; border-radius:40px;">
-                <tr>
-                  <td style="padding:0;">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; border-right:1px solid #b8b6b2; vertical-align:top;">
-                          <p style="margin:0 0 38px; font-size:0; line-height:1;">
-                            <span style="font-size:54px; font-weight:800; color:#8c2f8d; letter-spacing:-2px;">LUX</span>
-                            <span style="font-size:54px; color:#8b8989; padding:0 12px;">|</span>
-                            <span style="font-size:42px; font-weight:500; color:#4d4844; letter-spacing:-1px;">Range.</span>
-                          </p>
-                          <p style="margin:0 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Options Selected</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;">
-                            Face of Kitchen<br>
-                            Drawers<br>
-                            Doors<br>
-                            Kickplates<br>
-                            Worktops<br>
-                            Splashbacks<br>
-                            Upstands<br>
-                            Endpanels<br>
+                            End Panels<br>
                             Fabrication
                           </p>
                         </td>
-                        <td class="plan-col" width="50%" valign="top" style="width:50%; padding:34px 34px 28px; vertical-align:top;">
-                          <p style="margin:0 0 22px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Warranty Details</p>
-                          <p style="margin:0 0 22px; font-size:24px; line-height:1.35; color:#171717;">
+                        <td class="detail-col" style="padding-left:12px;">
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Warranty Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
                             <strong>Installer Guarantee</strong><br>
                             1-Year Labor Warranty
                           </p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;">
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
                             <strong>Material Guarantee</strong><br>
-                            10-Year Extended Warranty
+                            3-Year Standard Warranty
                           </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Range Details</p>
-                          <p style="margin:0 0 28px; font-size:24px; line-height:1.35; color:#171717;"><strong>110</strong> Modern Styles.</p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
-                          <p style="margin:24px 0 18px; font-size:28px; line-height:1.2; color:#000000; font-weight:800;">Specifications</p>
-                          <p style="margin:0 0 20px; font-size:24px; line-height:1.35; color:#171717;"><strong>Thickness:</strong> 200-250 Micron</p>
-                          <p style="margin:0; font-size:24px; line-height:1.35; color:#171717;"><strong>Durability:</strong> Very High</p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Range Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">21 Modern Styles</p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Specifications</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Thickness: 100 Micron</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Durability: Medium</p>
                         </td>
                       </tr>
+                    </table>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:16px;"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                    <p class="addons-title" style="margin:16px 0 24px; font-size:28px; line-height:34px; font-weight:700; color:#898989;">Additional <span style="color:#ffcc03;">Options.</span></p>
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;">
                       <tr>
-                        <td colspan="2" style="padding:0 24px;">
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr><td style="border-top:1px solid #b8b6b2; font-size:0; line-height:0;">&nbsp;</td></tr>
-                          </table>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
+                          </p>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
                         </td>
                       </tr>
+                    </table>
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td colspan="2" style="padding:28px 24px 30px;">
-                          <p style="margin:0 0 26px; font-size:44px; line-height:1.05; color:#8b8989; font-weight:800; letter-spacing:-1px;">
-                            Additional <span style="color:#ffca0d;">Options.</span>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
                           </p>
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="Flat doors and drawers" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">New Flat Doors and Drawers</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£1000<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£900</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                              <td class="addon-col" width="50%" valign="top" style="width:50%; padding:6px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr>
-                                    <td style="width:50%; padding-right:10px; vertical-align:top;">
-                                      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=520&q=80" alt="Premium woodgrain finish" width="244" style="display:block; width:100%; max-width:244px; height:250px; object-fit:cover; border-radius:28px;">
-                                    </td>
-                                    <td style="width:50%; vertical-align:top;">
-                                      <div style="display:inline-block; background-color:#9c9894; color:#ffffff; font-size:24px; line-height:1; font-weight:800; padding:10px 18px; border-radius:12px 12px 0 0;">Add+</div>
-                                      <p style="margin:14px 0 10px; font-size:18px; line-height:1.3; color:#111111; font-weight:800;">Premium Woodgrain Finish</p>
-                                      <p style="margin:0 0 10px; font-size:0; line-height:1;">
-                                        <span style="display:inline-block; position:relative; font-size:26px; line-height:1; color:#8b8989; font-weight:800; vertical-align:middle;">£850<span style="position:absolute; left:-4px; right:-4px; top:13px; border-top:4px solid #8b8989; transform:rotate(-18deg);"></span></span>
-                                        <span style="display:inline-block; margin-left:8px; font-size:15px; line-height:1; color:#8b8989; font-weight:700; vertical-align:middle;">10% off</span>
-                                      </p>
-                                      <p style="margin:0 0 10px; font-size:48px; line-height:0.95; color:#ffbf00; font-weight:900; letter-spacing:-2px;">£765</p>
-                                      <div style="display:inline-block; background-color:#249b53; color:#ffffff; font-size:14px; line-height:1; font-weight:800; padding:7px 16px; border-radius:999px; white-space:nowrap;">Multi Save</div>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
                         </td>
                       </tr>
                     </table>
@@ -568,48 +302,255 @@
               </table>
             </td>
           </tr>
-          <!-- ==================== END SELECTED PLAN CARDS ==================== -->
 
+          <!-- PREM DETAIL -->
+          <tr>
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 32px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="background-color:#ffcc03; padding:8px 10px; border-radius:14px 14px 0 0;">
+                    <p style="margin:0; text-align:center; font-size:10px; line-height:16px; font-weight:700; color:#ffffff;">Most Popular</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border:1px solid #ffcc03; padding:16px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="detail-col" style="padding-right:12px; border-right:1px solid rgba(0,0,0,0.2);">
+                          <p style="margin:0 0 16px; font-size:0; line-height:1;">
+                            <span style="font-size:20px; font-weight:700; color:#2d8acb;">PREM</span>
+                            <span style="font-size:20px; color:#4d4744; padding:0 2px;">|</span>
+                            <span style="font-size:18px; color:#4d4744;">Range.</span>
+                          </p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span style="font-size:12px; vertical-align:bottom;">from</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£1391</span>
+                          </p>
+                          <p style="margin:0 0 16px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£1391 <span style="font-size:10px; line-height:14px; color:#898989; font-weight:400;">Exc. VAT</span></p>
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Options Selected</p>
+                          <p class="detail-list" style="margin:0; font-size:16px; line-height:26px; color:#000000;">
+                            Face of kitchen<br>
+                            Drawers<br>
+                            Doors<br>
+                            Kickplates<br>
+                            Worktops<br>
+                            Splashbacks<br>
+                            Upstands<br>
+                            End Panels<br>
+                            Fabrication
+                          </p>
+                        </td>
+                        <td class="detail-col" style="padding-left:12px;">
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Warranty Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
+                            <strong>Installer Guarantee</strong><br>
+                            1-Year Labor Warranty
+                          </p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
+                            <strong>Material Guarantee</strong><br>
+                            7-Year Extended Warranty
+                          </p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Range Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">98 Modern Styles</p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Specifications</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Thickness: 150-200 Micron</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Durability: High</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:16px;"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                    <p class="addons-title" style="margin:16px 0 24px; font-size:28px; line-height:34px; font-weight:700; color:#898989;">Additional <span style="color:#ffcc03;">Options.</span></p>
 
-          <!-- ==================== SECTION 5: BOOK APPOINTMENT IMAGE ==================== -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;">
+                      <tr>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
+                          </p>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
+                          </p>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- LUX DETAIL -->
+          <tr>
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 32px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid rgba(0,0,0,0.2); border-radius:24px 24px 0 0;">
+                <tr>
+                  <td style="padding:16px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="detail-col" style="padding-right:12px; border-right:1px solid rgba(0,0,0,0.2);">
+                          <p style="margin:0 0 16px; font-size:0; line-height:1;">
+                            <span style="font-size:20px; font-weight:700; color:#8c2f8d;">LUX</span>
+                            <span style="font-size:20px; color:#4d4744; padding:0 2px;">|</span>
+                            <span style="font-size:18px; color:#4d4744;">Range.</span>
+                          </p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span style="font-size:12px; vertical-align:bottom;">from</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through; vertical-align:bottom;">£2450</span>
+                          </p>
+                          <p style="margin:0 0 16px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£2350 <span style="font-size:10px; line-height:14px; color:#898989; font-weight:400;">Exc. VAT</span></p>
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Options Selected</p>
+                          <p class="detail-list" style="margin:0; font-size:16px; line-height:26px; color:#000000;">
+                            Face of kitchen<br>
+                            Drawers<br>
+                            Doors<br>
+                            Kickplates<br>
+                            Worktops<br>
+                            Splashbacks<br>
+                            Upstands<br>
+                            End Panels<br>
+                            Fabrication
+                          </p>
+                        </td>
+                        <td class="detail-col" style="padding-left:12px;">
+                          <p class="detail-title" style="margin:0 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Warranty Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
+                            <strong>Installer Guarantee</strong><br>
+                            1-Year Labor Warranty
+                          </p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">
+                            <strong>Material Guarantee</strong><br>
+                            10-Year Standard Warranty
+                          </p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Range Details</p>
+                          <p class="detail-copy" style="margin:0 0 16px; font-size:16px; line-height:26px; color:#000000;">110 Modern Styles</p>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                          <p class="detail-title" style="margin:16px 0 8px; font-size:16px; line-height:26px; font-weight:700; color:#000000;">Specifications</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Thickness: 200-250 Micron</p>
+                          <p class="detail-copy" style="margin:0; font-size:16px; line-height:26px; color:#000000;">Durability: Very High</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:16px;"><tr><td style="border-top:1px solid rgba(0,0,0,0.2); font-size:0; line-height:0;">&nbsp;</td></tr></table>
+                    <p class="addons-title" style="margin:16px 0 24px; font-size:28px; line-height:34px; font-weight:700; color:#898989;">Additional <span style="color:#ffcc03;">Options.</span></p>
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;">
+                      <tr>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
+                          </p>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="option-image-col" style="padding-right:16px;">
+                          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=520&q=80" alt="New flat doors and drawers" width="160" style="display:block; width:100%; max-width:160px; height:172px; object-fit:cover; border-radius:24px 24px 0 0;">
+                        </td>
+                        <td class="option-copy-col">
+                          <div style="display:inline-block; background-color:#898989; padding:2px 8px; border-radius:8px 8px 0 0;">
+                            <p style="margin:0; font-size:14px; line-height:20px; font-weight:700; color:#ffffff;">Add +</p>
+                          </div>
+                          <p class="addon-name" style="margin:8px 0; font-size:16px; line-height:26px; color:#000000;">New Flat Doors and Drawers</p>
+                          <p style="margin:0 0 4px; font-size:0; line-height:1; color:#898989;">
+                            <span class="addon-old" style="font-size:16px; line-height:16px; font-weight:500; text-decoration:line-through;">£1000</span>
+                            <span style="display:inline-block; width:4px;"></span>
+                            <span class="addon-discount" style="font-size:12px; line-height:12px;">10% off</span>
+                          </p>
+                          <p class="addon-price" style="margin:0 0 8px; font-size:28px; line-height:34px; font-weight:700; color:#ffcc03;">£9000</p>
+                          <div style="display:inline-block; background-color:#219653; padding:2px 8px; border-radius:100px;">
+                            <p style="margin:0; font-size:10px; line-height:14px; color:#ffffff;">Multi Save</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+           <tr">
+            <td style="background-color:#ffffff; font-size:0; line-height:0; height:12px;">&nbsp;</td>
+          </tr>
+
           <tr>
             <td style="background-color:#ffffff; padding:0 24px 0;">
               <img
                 src="https://mcusercontent.com/de6df24b8217ef458fa7a1065/images/075720e3-acfa-1102-7a31-5890e69a1c08.png"
                 alt="Book your appointment"
                 width="612"
-                style="display:block; width:100%; height:auto; max-width:612px;"
+                style="display:block; width:100%; height:auto; max-width:612px; margin-bottom: 32px;"
               >
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 6: CTA BUTTON GIF ==================== -->
           <tr>
-            <td style="background-color:#ffffff; padding:12px 24px;">
-              <a href="http://www.kitchenwrapco.com/estimate/" target="_blank" style="display:block;">
-                <img
-                  src="https://mcusercontent.com/de6df24b8217ef458fa7a1065/images/829590fc-ab66-99ed-cc01-72f62b54a87b.gif"
-                  alt="Book an appointment"
-                  width="612"
-                  style="display:block; width:100%; height:auto; max-width:612px;"
-                >
-              </a>
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 24px; text-align:center;">
+              <img src="https://www.figma.com/api/mcp/asset/dd8164b1-f80a-4df6-84ea-4307fb69d0a6" alt="Book now" width="306" style="display:block; width:100%; max-width:306px; height:auto; margin:0 auto;">
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 7: BOOK APPOINTMENT TEXT ==================== -->
           <tr>
-            <td style="background-color:#ffffff; padding:12px 24px;">
-              <p style="margin:0; font-size:16px; line-height:1.5; color:#231e15; text-align:center;">
-                <strong>Book an appointment at our first-of-its-kind interior wrap<br>showroom or a home visit.</strong>
+            <td class="page-pad" style="background-color:#ffffff; padding:0 12px 24px;">
+              <p style="margin:0; font-size:16px; line-height:26px; font-weight:700; color:#000000; text-align:center;">
+                Book an appointment at our first-of-its-kind interior wrap showroom or a home visit.
               </p>
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 8: THANK YOU BANNER ==================== -->
           <tr>
             <td style="background-color:#ffca0d; padding:20px 24px;">
               <p style="margin:0; font-size:16px; line-height:1.5; color:#ffffff;">
@@ -618,8 +559,6 @@
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 9: NEED HELP ==================== -->
           <tr>
             <td style="background-color:#ffffff; padding:20px 24px;">
               <p style="margin:0 0 10px; font-size:16px; line-height:1; color:#231e15;">
@@ -632,8 +571,6 @@
             </td>
           </tr>
 
-
-          <!-- Divider -->
           <tr>
             <td style="background-color:#ffffff; padding:0 24px;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -644,16 +581,11 @@
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 10: SHOWROOM INFO (2 COLUMNS) ==================== -->
           <tr>
             <td style="background-color:#ffffff; padding:12px 0;">
-
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-
-                  <!-- Left: Address -->
-                  <td class="col-half" valign="top" width="50%" style="background-color:#ffffff; padding:12px 24px; vertical-align:top;">
+                  <td valign="top" width="50%" style="background-color:#ffffff; padding:12px 24px; vertical-align:top;">
                     <h4 style="margin:0 0 8px; font-size:15px; color:#231e15; text-align:center;">Showroom Address</h4>
                     <p style="margin:0; font-size:14px; line-height:1.6; color:#231e15; text-align:center;">
                       Unit D<br>
@@ -664,8 +596,7 @@
                     </p>
                   </td>
 
-                  <!-- Right: Hours & Contact -->
-                  <td class="col-half" valign="top" width="50%" style="background-color:#8b8989; padding:12px 24px; vertical-align:top;">
+                  <td valign="top" width="50%" style="background-color:#8b8989; padding:12px 24px; vertical-align:top;">
                     <p style="margin:0 0 4px; font-size:0; line-height:0;">&nbsp;</p>
                     <h4 style="margin:0 0 4px; font-size:15px; color:#ffffff; text-align:center;">Showroom Opening Hours</h4>
                     <p style="margin:0 0 2px; font-size:14px; color:#ffffff; text-align:center;">9AM - 5.30PM</p>
@@ -674,15 +605,11 @@
                     <p style="margin:0 0 2px; font-size:14px; color:#ffffff; text-align:center;">01236 338074</p>
                     <p style="margin:0; font-size:14px; color:#ffffff; text-align:center;">contact@kitchenwrapco.com</p>
                   </td>
-
                 </tr>
               </table>
-
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 11: SOCIAL ICONS ==================== -->
           <tr>
             <td style="background-color:#ffca0d; padding:16px 24px; text-align:center;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
@@ -712,8 +639,6 @@
             </td>
           </tr>
 
-
-          <!-- ==================== SECTION 12: FOOTER ==================== -->
           <tr>
             <td style="background-color:#ffca0d; padding:8px 24px 24px;">
               <p style="margin:0 0 6px; font-size:13px; line-height:1.5; color:#ffffff;">
@@ -727,9 +652,7 @@
             </td>
           </tr>
 
-
         </table>
-        <!-- ==================== END CONTAINER ==================== -->
 
       </td>
     </tr>
